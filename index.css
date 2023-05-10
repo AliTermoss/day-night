@@ -1,0 +1,145 @@
+body{
+    background-color:rgb(13, 1, 24) ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    
+    
+}
+
+.toggle{
+    margin-top: 100px;
+    margin-left: 220px;
+    margin-bottom: 40px;
+    background-color: rgb(187, 187, 184);
+    border-radius: 50px;
+    width: 58px;
+    height: 25px;
+    border: 1px solid wheat;
+    transform: translateX(100px);
+    
+}
+.main1{
+    margin-left: 220px; 
+}
+.toggle input {
+    
+    width: 18px;
+    height: 18px;
+    appearance: none;
+    border-radius: 50%;
+}
+
+.toggle  #one{
+    background:linear-gradient(rgb(206, 102, 17), rgb(250, 193, 5));
+    opacity: 1;
+    
+}
+
+.toggle  #two{
+    background:linear-gradient(black, white);
+    opacity: 0;
+}
+
+.toggle  #one:hover{
+   cursor: pointer;
+    
+}
+
+.toggle  #two:hover{
+    cursor: pointer;
+}
+
+.main{
+    width: 280px;
+    height: 400px;
+    border: 1px solid white;
+    border-radius: 150px 150px 10px 10px;
+    overflow: hidden;
+    background:linear-gradient(#750050,#b10042,#da4837,#f7bb38)
+}
+
+.main1 .star{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: .6;
+  position: relative;
+  top: -300px;
+  left: 220px;
+  box-shadow: -150px -35px white,-180px 40px white;
+}
+
+.circle{
+    width: 500px;
+    height: 500px;
+    transform: translate(-110px,-350px) ;
+    border-radius: 50%;
+    
+
+}
+
+.circle .sun{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    left: 212px;
+    top: 10px;
+    z-index: 1;
+   /* box-shadow: 0px 0px 20px white,0px 0px 40px white,
+    0px 0px 80px white,0px 0px 160px white;*/
+}
+
+.circle .sun:after{
+    content: "";
+    position: absolute;
+    transform: translate(-15px,-14px);
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    filter:opacity(.3);
+    border-radius: 50%;
+    
+    
+}
+
+.circle .sun:before{
+    content: "";
+    position: absolute;
+    transform: translate(-30px,-28px);
+    width: 130px;
+    height: 130px;
+    background-color: white;
+    filter:opacity(.2);
+    border-radius: 50%;
+    
+    
+}
+
+.circle .moon{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    bottom: -350px;
+    left: 218px;
+    visibility: hidden;
+    box-shadow: 0px 0px 20px white,0px 0px 40px white,
+    0px 0px 80px white,0px 0px 160px white;
+}
+
+.image{
+    z-index: 2;
+    position: absolute;
+    transform: translate(30px,237px);
+    
+}
+
+.image img{
+    width: 220px;
+}

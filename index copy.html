@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day and Night</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+<section>
+
+   <div class="toggle">
+    <input type="radio" name="" id="one">
+    <input type="radio" name="" id="two">
+   </div> 
+
+   <div class="main1">
+   <div class="main"></div>
+   <div class="star"></div>
+   <div class="circle">
+    <div class="sun"></div>
+    <div class="moon"></div>
+   </div>
+
+</div>
+</section>
+
+<div class="image"><img src="1.png" alt=""></div>
+</body>
+<script>
+    let Tog=document.querySelector('.toggle #one');
+    let Tog1=document.querySelector('.toggle #two');
+    let Cir=document.querySelector('.circle');
+    let Sun=document.querySelector('.circle .sun');
+    let Moon=document.querySelector('.circle .moon');
+    let Star=document.querySelector('.main1 .star');
+    let Main=document.querySelector('.main1 .main');
+
+    Tog.addEventListener('click',function(){
+        Tog.style.opacity='0';
+        Tog1.style.opacity='1';
+        Cir.style.transform=' translate(-110px,-350px) rotate(180deg)';
+        Sun.style.visibility='hidden';
+        Moon.style.visibility='visible';
+        Moon.style.opacity='1';
+        Star.style.opacity='1';
+        Main.style.background='linear-gradient(#14045f,#331a99,#282bce,#1555ec,#1e84f7)';
+    })
+
+    Tog1.addEventListener('click',function(){
+        Tog1.style.opacity='0';
+        Tog.style.opacity='1';
+        Cir.style.transform=' translate(-110px,-350px) rotate(0deg)';
+        Sun.style.visibility='visible';
+        Moon.style.opacity='0';
+        Star.style.opacity='.3';
+        Main.style.background='linear-gradient(#750050,#b10042,#da4837,#f7bb38)';
+    })
+</script>
+</html>
